@@ -1,0 +1,18 @@
+class Student():
+   def __init__(self,name,regno,course):
+        self.name=name
+        self.regno=regno
+        self.course=course
+   def club(self):
+        print(self.name.title() + self.regno.upper() + " is in Robotics club")
+   def school(self):
+        if self.course=='bcs'or'BCS':
+            print(self.name.title() + "is in SCI")
+        else:
+            print(self.name.title()+" is in other schools")
+sname=input("Enter your name")
+scourse=input("Course")
+sregno=input("Enter Reg No")
+duncan=Student(sname,sregno,scourse)
+duncan.school()
+#RUNNING
